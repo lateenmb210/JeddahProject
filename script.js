@@ -337,5 +337,33 @@ if (window.performance && window.performance.timing) {
         console.log('Page Load Time: ' + pageLoadTime + 'ms');
     });
 }
+// Contact form handling
+const contactForm = document.getElementById('contactForm');
+const contactStatus = document.getElementById('contactStatus');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // منع إعادة تحميل الصفحة
+
+        // التحقق البسيط من الحقول
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !phone || !email || !message) {
+            contactStatus.style.color = '#b91c1c';
+            contactStatus.textContent = 'يرجى تعبئة جميع الحقول قبل الإرسال.';
+            return;
+        }
+
+        // هنا يمكن لاحقًا ربطه ببريد/خدمة خارجية لو احتجتِ
+        contactStatus.style.color = '#15803d';
+        contactStatus.textContent = 'تم إرسال رسالتك بنجاح! شكرًا لتواصلك معنا 🌟';
+
+        contactForm.reset();
+    });
+}
 
 console.log('اكتشف جدة - Website Loaded Successfully! 🎉');
+
