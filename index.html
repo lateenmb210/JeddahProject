@@ -30,7 +30,6 @@
                     <a href="#audience" class="nav-link" data-section="audience">الفئة المستهدفة</a>
                     <a href="#wildlife" class="nav-link" data-section="wildlife">الحياة الفطرية</a>
                 </div>
-                <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
         </div>
     </nav>
@@ -57,6 +56,7 @@
                 <div class="intro-card">
                     <video controls width="100%" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                         <source src="videos/jeddah_intro.mp4" type="video/mp4">
+                        المتصفح لا يدعم تشغيل الفيديو.
                     </video>
                     <p class="intro-text">
                         تُعد جدة بوابة الحرمين الشريفين، ومركزاً حيوياً لا ينام، يجمع بين الأسواق التقليدية والمجمعات
@@ -398,44 +398,47 @@
                 </div>
             </div>
         </section>
+    
 
-            <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">للتواصل معنا</h2>
-                <p class="section-subtitle">يسعدنا تواصلك معنا للاستفسارات والمقترحات</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">للتواصل معنا</h2>
+            <p class="section-subtitle">يسعدنا تواصلك معنا للاستفسارات والمقترحات</p>
 
-                <div class="contact-card">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">الاسم</label>
-                            <input type="text" id="name" name="name" placeholder="اكتب اسمك" required>
-                        </div>
+            <div class="contact-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" name="name" placeholder="اكتب اسمك" required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" pattern="05[0-9]{8}" required>
-                        </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" pattern="05[0-9]{8}"
+                            required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="email">الإيميل</label>
-                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">الإيميل</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="message">اكتب رسالتك هنا</label>
-                            <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك..." required></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="message">اكتب رسالتك هنا</label>
+                        <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك..." required></textarea>
+                    </div>
 
-                        <button type="submit" class="btn btn-primary contact-submit">إرسال</button>
+                    <button type="submit" class="btn btn-primary contact-submit">إرسال</button>
 
-                        <p id="contactStatus" class="contact-status" aria-live="polite"></p>
-                    </form>
-                </div>
+                    <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    </main>
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -476,6 +479,3 @@
 </body>
 
 </html>
-
-
-
