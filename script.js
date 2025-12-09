@@ -337,6 +337,7 @@ if (window.performance && window.performance.timing) {
         console.log('Page Load Time: ' + pageLoadTime + 'ms');
     });
 }
+
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 const contactStatus = document.getElementById('contactStatus');
@@ -365,5 +366,5 @@ if (contactForm) {
     });
 }
 
-console.log('اكتشف جدة - Website Loaded Successfully! 🎉');
 
+console.log('اكتشف جدة - Website Loaded Successfully! 🎉');
